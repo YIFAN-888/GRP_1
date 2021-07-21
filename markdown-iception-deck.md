@@ -1,11 +1,11 @@
 [markdown_inception_deck https://github.com/yosukeo/markdown-inception-deck/blob/master/markdown-inception-deck.md]
 
-#インセプションデッキ
+<h1>インセプションデッキ</h1>
 
-#プロジェクトの名前 
+<h1>プロジェクトの名前</h1>
 [プロジェクトの名前]
   
-#名前をつけた理由</h1>
+<h1>名前をつけた理由</h1>
 
   .[名前をつけた理由その1]
   
