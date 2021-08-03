@@ -25,12 +25,12 @@ def gesture_recognition():
         ycrcb = cv.cvtColor(res, cv.COLOR_BGR2YCrCb)
         (_, cr, _) = cv.split(ycrcb)
         cr1 = cv.GaussianBlur(cr, (5, 5), 0)  # ガウスフィルタリング
-        _, skin = cv.threshold(cr1, 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)  # OTSU图像二值化
+        _, skin = cv.threshold(cr1, 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
 
         gesture_roi = skin[0:350, 380:700]
         cv.imshow("dst_demo", skin)
         # cv.imshow("gesture_roi", gesture_roi)
-        contours, heriachy = cv.findContours(gesture_roi, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)  # 获取轮廓点集(坐标)
+        contours, heriachy = cv.findContours(gesture_roi, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 
         for i, contour in enumerate(contours):  # ヴィットーリプロフィール
             cv.drawContours(frame[0:350, 380:700], contours, i, (255, 0, 0), 1)
