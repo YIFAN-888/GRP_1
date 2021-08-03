@@ -74,7 +74,7 @@ def gesture_recognition_two():
     ret, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
     dst = cv.GaussianBlur(binary, (1, 1), 0)
 
-    contours, heriachy = cv.findContours(dst, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)  # 获取轮廓本身
+    contours, heriachy = cv.findContours(dst, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
     for i, contour in enumerate(contours):
         cv.drawContours(img, contours, i, (0, 255, 0), 3)
         print(i)
