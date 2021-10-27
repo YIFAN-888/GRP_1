@@ -59,7 +59,7 @@ img_a = cv2.merge((c_red, c_green, c_blue, mask.astype('float32') / 255.0))
 # plt.imshow(img_a)
 # plt.show()
 
-#以上のコードを総合する
+#以上のコードを関数で総合する
 def remove_bg(
         path,
         BLUR=21,
