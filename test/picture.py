@@ -124,4 +124,3 @@ ax.set_axis_off()
 fig.add_axes(ax)
 ax.imshow(img_fin)
 fig.savefig('fin.png')
-
