@@ -14,7 +14,8 @@ Python 3.7<br>
 <h2>イブラリのインストール</h2>
  opencv<br>
 pyautogui<br>
-win32gui<br>
+win32<br>
 PyQt5<br>
 joblib<br>
 matplotlib<br>
+scikit-learn<br>
